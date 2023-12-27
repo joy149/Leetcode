@@ -10,8 +10,6 @@ public class NextGreaterElement1 {
         Map<Integer, Integer> map = getIndexMapping(nums1, nums2);
         Stack<Integer> st = new Stack<>();
 
-        int j = 0;
-
         for (int i = nums2.length -1; i >= 0; i--) {
                 int res = 0;
                 while (!st.isEmpty() && st.peek() <= nums2[i]) {
