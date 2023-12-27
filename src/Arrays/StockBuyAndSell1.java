@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package Arrays;
 
 //https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 public class StockBuyAndSell1 {

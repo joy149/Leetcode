@@ -1,3 +1,5 @@
+package Stacks;
+
 import java.util.*;
 
 //https://leetcode.com/problems/next-greater-element-i/description/

@@ -1,5 +1,6 @@
+package Arrays;
+
 import java.util.*;
-import java.util.stream.Collectors;
 
 //https://leetcode.com/problems/sort-colors/description/
 public class SortArraysOf012 {
