@@ -4,8 +4,6 @@ import java.util.stream.Collectors;
 //https://leetcode.com/problems/sort-colors/description/
 public class SortArraysOf012 {
 
-    //TODO: To find better solution than this
-
     //This solution has a time complexity of O(2N)
     public void sortColors(int[] nums) {
         Map<Integer, Integer> countMap = new HashMap<>();
