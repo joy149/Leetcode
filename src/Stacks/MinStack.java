@@ -2,6 +2,7 @@ package Stacks;
 
 import java.util.*;
 
+//https://leetcode.com/problems/min-stack/description
 class MinStack {
     Stack<Pair> st ;
     int min;
