@@ -3,6 +3,8 @@ package Arrays;
 //https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 public class StockBuyAndSell1 {
     //prices = [7,1,5,3,6,4]
+    //Idea is to maintain a min value in the iteration and check for diff in case the price
+    //is higher for next iteration. And store the max diff.
     public int maxProfit(int[] prices) {
         int maxProfit = Integer.MIN_VALUE;
         int min = prices[0];
