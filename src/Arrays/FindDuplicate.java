@@ -1,5 +1,8 @@
 package Arrays;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //https://leetcode.com/problems/find-the-duplicate-number/description/
 //Optimal solution pending.
 public class FindDuplicate {
@@ -15,8 +18,18 @@ public class FindDuplicate {
         }
         return res;
     }
+    public static int findDuplicateAgain(int[] nums) {
+        List<Integer> list = new ArrayList<>();
+        for (int i : nums) {
+            if (list.contains(i)) {
+                return nums[i];
+            }
+            list.add(nums[i]);
+        }
+        return -1;
+    }
 
     public static void main(String[] args) {
-        System.out.println(findDuplicate(new int[] {1,3,4,2,2}));
+        System.out.println(findDuplicateAgain(new int[] {1,3,4,2,2}));
     }
 }
