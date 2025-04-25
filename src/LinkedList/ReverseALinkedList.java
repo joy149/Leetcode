@@ -1,5 +1,8 @@
 package LinkedList;
 
+import java.util.Arrays;
+import java.util.List;
+
 //https://leetcode.com/problems/reverse-linked-list/
 public class ReverseALinkedList {
     public ListNode reverseList(ListNode head) {
@@ -26,5 +29,6 @@ public class ReverseALinkedList {
         front.next = head;
         head.next = null;
         return newHead;
+
     }
 }
