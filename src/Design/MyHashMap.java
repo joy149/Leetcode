@@ -1,8 +1,6 @@
 package Design;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Objects;
 
 public class MyHashMap {
@@ -37,7 +35,7 @@ public class MyHashMap {
 
     @Override
     public String toString() {
-        return Arrays.toString(node);
+        return Arrays.toString(Arrays.stream(node).filter(Objects::nonNull).toArray());
     }
 }
 
