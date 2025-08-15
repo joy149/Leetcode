@@ -1,21 +1,22 @@
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-import java.util.stream.Collectors;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) throws ParseException {
-        DateTimeFormatter df = DateTimeFormatter.ofPattern("MM-dd-yyyy");
-        LocalDate date = LocalDate.parse("04-16-2025", df);
-
-        System.out.println(date);
-        System.out.println(date.minusDays(180));
+    public static void displayText(String text) {
+        System.out.println("display text");
+    }
+    public static void displayText(Object o) {
+        System.out.println("display" + o);
+    }
+    public static void main(String[] args) {
+//        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+//        // to see how IntelliJ IDEA suggests fixing it.
+//        System.out.printf("Hello and welcome!");
+//
+//        for (int i = 1; i <= 5; i++) {
+//            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+//            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+//            System.out.println("i = " + i);
+//        }
+        displayText(new Object());
     }
 }
